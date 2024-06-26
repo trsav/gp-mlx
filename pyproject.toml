@@ -69,6 +69,7 @@ pythonpath = [
   "src"  # Add this line
 ]
 
+
 [tool.coverage]
 run.source = ["gpmlx"]
 port.exclude_lines = [
@@ -86,6 +87,7 @@ disallow_untyped_defs = false
 disallow_incomplete_defs = false
 check_untyped_defs = true
 strict = true
+ignore_missing_imports = true
 enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
 
 [[tool.mypy.overrides]]
