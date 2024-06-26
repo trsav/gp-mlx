@@ -15,7 +15,7 @@ classifiers = [
 ]
 
 [project]
-name = "gp-mlx"
+name = "gpmlx"
 version = "0.1.0"
 authors = [
   { name = "Tom Savage", email = "t.savage@imperial.ac.uk" },
@@ -56,7 +56,7 @@ Changelog = "https://github.com/trsav/gp-mlx/releases"
 
 [tool.pytest.ini_options]
 minversion = "6.0"
-addopts = ["-ra", "--showlocals", "--strict-markers", "--strict-config"]
+addopts = ["-ra", "--showlocals", "--strict-markers", "--strict-config","--import-mode=importlib"]
 xfail_strict = true
 filterwarnings = [
   "error",
@@ -64,6 +64,9 @@ filterwarnings = [
 log_cli_level = "INFO"
 testpaths = [
   "tests",
+]
+pythonpath = [
+  "src"  # Add this line
 ]
 
 [tool.coverage]
