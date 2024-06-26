@@ -1,0 +1,14 @@
+# Changes here will be overwritten by Copier
+_commit: v0.1.0
+_src_path: gh:alan-turing-institute/python-project-template
+coc: our_coc
+email: t.savage@imperial.ac.uk
+full_name: Tom Savage
+license: BSD
+min_python_version: '3.8'
+org: trsav
+project_name: gp-mlx
+project_short_description: Lightweight Fast Gaussian Process Implementation in MLX
+python_name: gpmlx
+typing: strict
+url: https://github.com/trsav/gp-mlx
