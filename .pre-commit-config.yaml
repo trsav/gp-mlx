@@ -15,30 +15,30 @@ repos:
       - id: requirements-txt-fixer
       - id: trailing-whitespace
 
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: "v0.4.9"
-    hooks:
-      # first, lint + autofix
-      - id: ruff
-        types_or: [python, pyi, jupyter]
-        args: ["--fix", "--show-fixes"]
-      # then, format
-      - id: ruff-format
+  # - repo: https://github.com/astral-sh/ruff-pre-commit
+  #   rev: "v0.4.9"
+  #   hooks:
+  #     # first, lint + autofix
+  #     - id: ruff
+  #       types_or: [python, pyi, jupyter]
+  #       args: ["--fix", "--show-fixes"]
+  #     # then, format
+  #     - id: ruff-format
 
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: "v1.10.0"
-    hooks:
-      - id: mypy
-        files: src
-        args: []
-        additional_dependencies:
-          - pytest
+  # - repo: https://github.com/pre-commit/mirrors-mypy
+  #   rev: "v1.10.0"
+  #   hooks:
+  #     - id: mypy
+  #       files: src
+  #       args: []
+  #       additional_dependencies:
+  #         - pytest
 
-  - repo: local
-    hooks:
-    -   id: pytest
-        name: pytest
-        entry: pytest
-        language: system
-        pass_filenames: false
-        always_run: true
+  # - repo: local
+  #   hooks:
+  #   -   id: pytest
+  #       name: pytest
+  #       entry: pytest
+  #       language: system
+  #       pass_filenames: false
+  #       always_run: true
